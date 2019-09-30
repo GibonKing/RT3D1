@@ -669,6 +669,14 @@ int DrawSegments2Buffer(SEGMENT* pSegments)
 	// Note the code below should copy the TIM at index "tileIndex" to the map grid square "mapIndex" 
 	// CopyTIM2Buffer(_TIMXPOS(tileIndex), _TIMYPOS(tileIndex), _MAPXPOS(mapIndex), _MAPYPOS(mapIndex), tileRot);
 
+	//Step through all the segments (4x4 grid of tiles) in the map
+	for (int Seg(0); Seg < 256; Seg++) {
+
+		for (int poly(0); poly < 16; poly++) {			
+			POLYSTRUCT polyStruct = pSegments->strTilePolyStruct[poly];
+		}
+	}
+
 	return 0;
 }
 
